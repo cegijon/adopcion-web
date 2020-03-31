@@ -36,6 +36,10 @@ nav img {
   transition: background-color 0.5s
 }
 
+.cardDisabled {
+  background-color: #cccccc;
+}
+
 .card:hover {
   background-color: #fed201;
   color: #000;
