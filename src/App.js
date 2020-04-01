@@ -77,9 +77,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className="cardContainer">
       <ContenedorTarjeta gatos={gatos} />
-      </div>
       <Footer />
     </>
   );
