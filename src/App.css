@@ -86,10 +86,19 @@ nav img {
   padding: 20px;
 }
 
-.card_info button {
+.cardButton {
   background: none;
   color: #fff;
   border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.footerButton {
+  background: none;
+  color: #000000;
+  border: 1px solid #000000;
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 12px;

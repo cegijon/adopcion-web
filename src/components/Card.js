@@ -1,6 +1,7 @@
 import React from 'react';
+import Button from './Button';
 
-const Card = ({name, shortDesc, img, isAvailable}) => {
+const Card = ({ name, shortDesc, img, isAvailable }) => {
 
     return (
         <div className={isAvailable ? 'card' : 'cardDisabled'}>
@@ -12,7 +13,7 @@ const Card = ({name, shortDesc, img, isAvailable}) => {
                 <p>
                     {shortDesc}
                 </p>
-                <button>{isAvailable ? 'Ver mas' : 'No esta disponible'}</button>
+                <Button mensaje={isAvailable ? 'Ver mas' : 'No disponible'} estilo={"cardButton"} />
             </div>
         </div >
     )
