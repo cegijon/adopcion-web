@@ -1,11 +1,11 @@
 import React from 'react';
-import icono from '../img/burgerbutton.png';
+import icono from '../img/burger2.png';
 
 const NavBar = () => {
 return (
     <nav>
     <div>#AdoptAdas</div>
-    <img src={icono}></img>
+    <img alt='burger button' src={icono}></img>
   </nav>
 )
 }

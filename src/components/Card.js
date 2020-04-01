@@ -1,21 +1,18 @@
 import React from 'react';
 
-const Card = props => {
-
-
-    let disponible = props.info.disponible ? '' : 'cardDisabled'
+const Card = ({name, shortDesc, img, isAvailable}) => {
 
     return (
-        <div className={`card ${disponible}`}>
+        <div className={isAvailable ? 'card' : 'cardDisabled'}>
             <div className="card_img">
-                <img src={props.info.img} />
+                <img alt='imagen de un gato' src={img} />
             </div>
             <div className="card_info">
-                <h3>{props.info.name}</h3>
+                <h3>{name}</h3>
                 <p>
-                    {props.info.shortDesc}
+                    {shortDesc}
                 </p>
-                <button>{props.info.disponible ? 'Ver mas' : 'No disponible'}</button>
+                <button>{isAvailable ? 'Ver mas' : 'No esta disponible'}</button>
             </div>
         </div >
     )
