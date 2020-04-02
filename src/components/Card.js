@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import './Card.css';
+import './Card.scss';
 
 const Card = ({ name, shortDesc, img, isAvailable }) => {
 

@@ -23,11 +23,10 @@
   .card:hover {
     background-color: #fed201;
     color: #000;
-  }
-  
-  .card:hover button {
+    button {
     color: #1a75bc;
     border: 1px solid #1a75bc;
+    }
   }
   
   .card:hover h3 {

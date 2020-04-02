@@ -1,9 +1,18 @@
 import React from 'react';
-import './Button.css';
+import styled from 'styled-components';
+
+const ButtonComponent = styled.button`
+background: none;
+color: #fff;
+border: 1px solid #fff;
+padding: 5px 10px;
+border-radius: 4px;
+font-size: 12px;
+`;
 
 const Button = ({ mensaje, estilo }) => {
     return (
-        <button className={estilo}>{mensaje}</button>
+        <ButtonComponent className={estilo}>{mensaje}</ButtonComponent>
     )
 }
 
