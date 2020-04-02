@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import './ContenedorTarjeta.css';
 
 const ContenedorTarjeta = ({ gatos }) => {
   return (

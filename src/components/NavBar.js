@@ -1,5 +1,6 @@
 import React from 'react';
 import icono from '../img/burger2.png';
+import './NavBar.css'
 
 const NavBar = () => {
 return (
