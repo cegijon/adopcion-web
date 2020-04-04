@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import icono from '../img/burger2.png';
 
 const Nav = styled.nav`
-background-color: #1a75bc;
+background-color: ${prop => prop.hayEmergenciaAdopteril ? 'red' : '#1a75bc'};
 height: 80px;
 padding: 20px;
 color: #fff;
@@ -23,13 +23,14 @@ justify-content: space-between;
   img {
     width: 50px;
     height: auto;
-  }
-}`;
+  }`;
 
-const NavBar = () => {
+const NavBar = ({propNombre}) => {
   return (
-    <Nav>
-      <div>#AdoptAdas</div>
+    <Nav hayEmergenciaAdopteril={false}>
+      <div>
+        <p>{propNombre}</p>
+      </div>
       <img alt='burger button' src={icono}></img>
       <button>Boton</button>
     </Nav>
